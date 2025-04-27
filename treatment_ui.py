@@ -28,13 +28,16 @@ if st.button("Recommend Treatment"):
     st.subheader("Q-values for all actions")
     for i, val in enumerate(q_values):
         st.write(f"{actions[i]}: {val:.4f}")
-# --- Footer ---
-st.markdown("---")
-st.markdown(
-    """
-    <div style='text-align: center; color: #999999; font-size: 12px; padding-top: 10px;'>
-        © Ireri Mugambi 2025. All rights reserved.
-    </div>
-    """,
-    unsafe_allow_html=True
+
+# --- Footer (make sure this is placed outside the button logic) ---
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; color: #999999; font-size: 12px; padding-top: 10px;'>
+        © Ireri Mugambi 2025. All rights reserved.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+l=True
 )
