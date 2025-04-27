@@ -29,7 +29,7 @@ if st.button("Recommend Treatment"):
     for i, val in enumerate(q_values):
         st.write(f"{actions[i]}: {val:.4f}")
 
-# --- Footer (corrected placement and removal of extra parenthesis) ---
+# --- Footer ---
 st.markdown("---")
 st.markdown(
     """
@@ -38,5 +38,4 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True
-)
 )
